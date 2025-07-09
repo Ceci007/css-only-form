@@ -189,10 +189,12 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.forgot-password h2 {
+.forgot-password a {
   font-size: 12px;
   font-weight: 400;
   color: #007AFF;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .sign-in-button {
@@ -214,4 +216,17 @@ input:checked + .slider:before {
   background-color: #F2F2F2;
   margin: 36px auto;
   border: none;
+}
+
+.google-button {
+  width: 100%;
+  display: flex;
+  gap: 7px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.9);
+  background: #000;
 }
