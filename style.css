@@ -13,7 +13,7 @@ body {
 
 .container {
   min-height: 100vh;
-  height: auto;
+  height: 100vh;
   width: 100%;
   background: #333;
   display: flex;
@@ -23,6 +23,7 @@ body {
 .image-container {
   display: flex;
   flex: 1;
+  height: 100%;
 }
 
 .image-container img {
@@ -32,16 +33,22 @@ body {
 }
 
 .form-container {
+  position: relative;
   width: 400px;
+  height: 100%;
   background: #fff;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: justify-between;
   align-items: stretch;
   align-content: stretch;
-  height: 100vw;
   padding: 36px;
+}
+
+.top-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .username-container {
@@ -54,6 +61,7 @@ body {
   font-family: sans-serif;
   font-size: 18px;
   font-weight: 600;
+  color: #333;
 }
 
 .form {
@@ -78,7 +86,7 @@ body {
   padding-left: 15px;
   margin-bottom: 7px;
   font-size: 10px;
-  color: #000;
+  color: #333;
   opacity: 0.8; 
 }
 
@@ -121,8 +129,7 @@ input:placeholder {
 .remember-me h2 {
   font-size: 12px;
   font-weight: 400;
-  color: #000;
-  opacity: 0.8;
+  color: #333;
 }
 
 /* -------- Rounded switch ------------------------ */
@@ -229,4 +236,52 @@ input:checked + .slider:before {
   border-radius: 6px;
   color: rgba(255, 255, 255, 0.9);
   background: #000;
+}
+
+.sign-up-link {
+  margin-top: 36px;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.sign-up-link a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #007AFF;
+}
+
+.username-small {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px;
+}
+
+.user-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.username-small a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #007AFF;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.copy {
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
 }
