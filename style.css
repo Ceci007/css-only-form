@@ -182,7 +182,7 @@ input:checked + .slider:before {
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 36px;
 }
 
 .slider.round:before {
@@ -193,4 +193,25 @@ input:checked + .slider:before {
   font-size: 12px;
   font-weight: 400;
   color: #007AFF;
+}
+
+.sign-in-button {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 20px;
+  text-transform: Capitalize;
+  border: none;
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.9);
+  background: #007AFF;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #F2F2F2;
+  margin: 36px auto;
+  border: none;
 }
